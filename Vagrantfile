@@ -33,7 +33,7 @@ HAWQ_ORIGINAL_AMBARI_PLUGIN="hawq-plugin-phd-1.0-57.tar.gz"
 
 # This script only supports Pivotal HD 3.0 
 # for older versions please refer to github vagrantphd project under tzolov user account
-PHD_30 = ["AMBARI-1.7.1-87-centos6.tar", "PHD-3.0.0.0-249-centos6.tar", "PADS-1.3.0.0-12954.tar", "PHD-UTILS-1.1.0.20-centos6.tar", HAWQ_ORIGINAL_AMBARI_PLUGIN]
+PHD_30 = ["AMBARI-1.7.1-87-centos6.tar.gz", "PHD-3.0.0.0-249-centos6.tar", "PADS-1.3.0.0-12954.tar", "PHD-UTILS-1.1.0.20-centos6.tar", HAWQ_ORIGINAL_AMBARI_PLUGIN]
 
 #If you do not want to use out of the box plugin in PHD_30 components, and have an RPM of your own then you can put 
 #it in the following variable and set OVERWRITE_HAWQ_PLUGIN to 1. The RPM must be available in the root vagrant directory
