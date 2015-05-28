@@ -1,6 +1,12 @@
-# 주의사항
-vagrant up 실행 후에 ambari UI에서 HAWQ를 제외하고 hadoop을 설치하십시오.
-그리고 vm의 sysctl 설정을 변경한 후 HAWQ를 마져 설치하십시오.
+# 주의
+```
+1. 본 소스코드 다운로드
+2. 하둡설치관련 파일 다운로드
+3. vagrant up 명령
+4. hadoop vm의 sysctl 설정을 변경:
+   VM들이 virtualbox에 모두 만들어진 후, ambari(http://192.168.55.200:8080/) 에 접속하여 HAWQ 설치된 직후 vm.overcommit_memory=0으로 변경합니다.
+
+```
 
 # Vagrant PHD 3.0
 
