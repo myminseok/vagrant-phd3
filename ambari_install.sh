@@ -34,8 +34,8 @@ do
 #/staging/$filename/setup_repo.sh 
 #tar -xzf /vagrant/AMBARI-1.7.1-87-centos6.tar -C /staging/
 #tar -xzf /vagrant/PHD-3.0.0.0-249-centos6.tar -C /staging/
-#tar -xzf /vagrant/PADS-1.3.0.0-12954.tar -C /staging/
-#tar -xzf /vagrant/hawq-plugin-phd-1.0-57.tar.gz -C /staging
+#tar -xzf /vagrant/PADS-1.3.0.2-14421.tar.gz -C /staging/
+#tar -xzf /vagrant/hawq-plugin-phd-1.2-99.tar.gz -C /staging
 #tar -xzf /vagrant/PHD-UTILS-1.1.0.20-centos6.tar -C /staging
 
 done
@@ -73,18 +73,19 @@ ambari-server status
 
 #Now setup all PHD components available in local yum repository
 /staging/PHD-3.0.0.0/setup_repo.sh
-/staging/hawq-plugin-phd-1.0-57/setup_repo.sh 
-/staging/PADS-1.3.0.0/setup_repo.sh 
+/staging/hawq-plugin-phd-1.2-99/setup_repo.sh 
+/staging/PADS-1.3.0.2/setup_repo.sh 
 /staging/PHD-UTILS-1.1.0.20/setup_repo.sh
 
 #http://ambari.localdomain/PHD-3.0.0.0
-#http://ambari.localdomain/hawq-plugin-phd-1.0-57
+#http://ambari.localdomain/hawq-plugin-phd-1.2-99
 #http://ambari.localdomain/PADS-1.3.0.0
 #http://ambari.localdomain/PHD-UTILS-1.1.0.20
 
 #Exporting yum ambari repository files
 cp -f /etc/yum.repos.d/ambari.repo /vagrant/tmp
 cp -f /etc/yum.repos.d/PHD-3.0.0.0.repo /vagrant/tmp
-cp -f /etc/yum.repos.d/PADS-1.3.0.0.repo /vagrant/tmp
+#cp -f /etc/yum.repos.d/PADS-1.3.0.2.repo /vagrant/tmp
+cp -f /etc/yum.repos.d/PADS.repo /vagrant/tmp
 cp -f /etc/yum.repos.d/PHD-UTILS-1.1.0.20.repo /vagrant/tmp
-cp -f /etc/yum.repos.d/hawq-plugin-phd-1.0-57.repo /vagrant/tmp
+cp -f /etc/yum.repos.d/hawq-plugin-phd-1.2-99.repo /vagrant/tmp

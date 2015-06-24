@@ -58,7 +58,7 @@ then
     #Exporting yum ambari repository files
     cp -f /vagrant/tmp/ambari.repo  /etc/yum.repos.d
     cp -f /vagrant/tmp/PHD-3.0.0.0.repo /etc/yum.repos.d
-    cp -f /vagrant/tmp/PADS-1.3.0.0.repo /etc/yum.repos.d
+    cp -f /vagrant/tmp/PADS-1.3.0.2.repo /etc/yum.repos.d
     cp -f /vagrant/tmp/PHD-UTILS-1.1.0.20.repo /etc/yum.repos.d
     cp -f /vagrant/tmp/hawq-plugin-phd-1.0-57.repo /etc/yum.repos.d
     yum -y install ambari-agent
