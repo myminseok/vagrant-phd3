@@ -6,8 +6,6 @@
 4. hadoop vm의 sysctl 설정을 변경:
    1) VM들이 virtualbox에 모두 만들어진 후
    2) ambari에 접속: http://192.168.55.200:8080/
-   3) HAWQ 설치된 직후 vagrant ssh로 hadoop vm에 접속하여 vm.overcommit_memory=0으로 변경
-
 설치 및 hadoop구성 자동 완료.
 
 나중에 VM 재시작시:  vagrant up
