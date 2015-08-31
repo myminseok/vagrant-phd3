@@ -1,0 +1,30 @@
+{
+  "blueprint":"phddemo",
+  "default_password":"secret-password",
+  "host_groups": [
+  {
+   "name": "master",
+  "hosts":[
+  {
+    "fqdn":"phd1.localdomain" 
+  }
+  ]
+  },
+  {
+   "name": "slave_node",
+   "hosts":
+   [
+    {
+     "fqdn":"phd2.localdomain"
+    }
+   ]
+  }
+ ],
+ "configurations": [
+  {
+   "nagios-env": {
+    "nagios_contact": "admin@sample.com"
+   }
+  }
+ ]
+}
